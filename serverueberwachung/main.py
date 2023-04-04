@@ -1,18 +1,30 @@
-import blicklet
-import config
-import console_management
-import resources
-import source
+from resources.texts import logo
+from resources.uid_list import HOST, PORT
+import console_management.CommandHandler as CommandHandler
 
+# the user input the network configuration for connecting to the tinkerforge-server
 
+def bootup():
+    config_finished = False
+    global HOST
+    global PORT
+    while not config_finished:
+        HOST = input("Bitte geben sie die IP/Domain der Serverüberwachung ein: ")
+        PORT = input("Bitte geben sie den passenden Port ein: ")
+        if HOST != "" and PORT != "":
+            config_finished = True
+
+# beginning of the main loop
 running = True
-while (running):
-    print()
-    command = input("=> ")
+print(logo)
 
-    if command == "exit":
+
+bootup()
+
+# the main-loop of the programm
+while running:
+    command = input("=> ")
+    if command.lower() == "exit":
         running = False
-    elif command.lower() == "hallo":
-        print("Hallo wie geht es ihnen?\n")
     else:
-        print("Befehl unbekannt\n")
+        print(CommandHandler.evaluate(CommandHandler, command.lower()))
