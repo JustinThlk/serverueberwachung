@@ -8,6 +8,6 @@ def evaluate(self, command):
     if command == "hallo":
         return "Hallo wie geht es ihnen?\n"
     elif command == "temperaturlesen":
-        print(temperature_sensor.getTemp())
+        print(Temperature.getTemp())
     else:
         return "Befehl unbekannt\n"

@@ -3,7 +3,6 @@ from resources.uid_list import HOST, PORT
 import console_management.CommandHandler as CommandHandler
 
 # the user input the network configuration for connecting to the tinkerforge-server
-
 def bootup():
     config_finished = False
     global HOST
