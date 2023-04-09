@@ -9,7 +9,7 @@ def bootup():
     global PORT
     while not config_finished:
         HOST = input("Bitte geben sie die IP/Domain der Serverüberwachung ein: ")
-        PORT = input("Bitte geben sie den passenden Port ein: ")
+        PORT = int(input("Bitte geben sie den passenden Port ein: ")) # PORT als Typecast int, da sonst nicht kompatibel mit Tinkerforge-Packages
         if HOST != "" and PORT != "":
             config_finished = True
 

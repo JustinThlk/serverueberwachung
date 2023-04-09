@@ -1,6 +1,7 @@
 # list of UIDs for the tinkerforge bricklets
-HOST = ""
-PORT = ""
+from main import HOST, PORT
+HOST = "127.0.0.1"
+PORT = 4223 # Standardport von Tinkerforge Beispielen
 
 uid_tempsensor = "Wcg"
 uid_ambientlight = "Pdw"
