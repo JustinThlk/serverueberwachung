@@ -1,6 +1,6 @@
 from serverueberwachung.source.tinkerforge.ip_connection import IPConnection
 from serverueberwachung.source.tinkerforge.bricklet_humidity_v2 import HumidityV2
-from serverueberwachung.resources.uid_list import uid_list as UID, HOST, PORT
+from serverueberwachung.resources.uid_list import HOST, PORT, uid_list as UID
 
 ipcon = IPConnection()  # Create IP connection
 ptc = HumidityV2(UID.get("uid_humidity"), ipcon)  # Create device object

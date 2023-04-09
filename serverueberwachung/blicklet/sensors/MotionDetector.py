@@ -1,6 +1,6 @@
 from serverueberwachung.source.tinkerforge.ip_connection import IPConnection
 from serverueberwachung.source.tinkerforge.bricklet_motion_detector_v2 import BrickletMotionDetectorV2
-from serverueberwachung.resources.uid_list import uid_list as UID, HOST, PORT
+from serverueberwachung.resources.uid_list import HOST, PORT, uid_list as UID
 
 ipcon = IPConnection()  # Create IP connection
 ptc = BrickletMotionDetectorV2(UID.get("uid_motiondetector"), ipcon)  # Create device object

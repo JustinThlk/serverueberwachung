@@ -1,6 +1,6 @@
 from serverueberwachung.source.tinkerforge.ip_connection import IPConnection
 from serverueberwachung.source.tinkerforge.bricklet_ptc_v2 import BrickletPTCV2
-from serverueberwachung.resources.uid_list import uid_list as UID, HOST, PORT
+from serverueberwachung.resources.uid_list import HOST, PORT, uid_list as UID
 
 
 
