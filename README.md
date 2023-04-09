@@ -10,3 +10,4 @@
 - Globale Variable einführen, welche dann keine Connection mehr aufbaut (offlinemodus mit ggfs. Simulationsdaten)
 - Disconnect der einzelnen Bricklets mit einem finally im jedem Fall schliessen
 - Abfragereihenfolge für PORT und HOST umverlagern (In Tests wollte PORT und HOST aus uid_list.py geholt werden, bevor der Konsolencommand für die Abfrage lief)
+- Overleaf-Dokument Kommentare und Text besprechen

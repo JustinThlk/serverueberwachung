@@ -2,6 +2,7 @@ from consolemenu import ConsoleMenu
 from consolemenu.items import SubmenuItem, CommandItem
 from serverueberwachung.console_management.Command_List import command_list, item_index
 
+
 main_menu = ConsoleMenu("Haupt-Menu")
 history_menu = ConsoleMenu("Historie aller Messwerte")
 limit_menu = ConsoleMenu("Grenzwerte setzen")
@@ -44,6 +45,7 @@ def init_menu(): # Todo commands to execute
     limit_menu.append_item(l_light)
     limit_menu.append_item(l_wet)
     main_menu.show()
+
 
 def save_selected_option():
 
