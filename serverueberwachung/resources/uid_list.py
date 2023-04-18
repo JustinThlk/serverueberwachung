@@ -1,7 +1,7 @@
 # list of UIDs for the tinkerforge bricklets
 
-HOST = ""
-PORT = ""
+HOST = "172.20.10.57"
+PORT = 4223
 
 uid_list ={
 "uid_tempsensor" : "Wcg",

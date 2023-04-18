@@ -1,9 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-HOST = "localhost"
+HOST = "172.20.10.57"
 PORT = 4223
-UID = "XYZ" # Change XYZ to the UID of your PTC Bricklet 2.0
+UID = "ML4" # Change XYZ to the UID of your PTC Bricklet 2.0
 
 from tinkerforge.ip_connection import IPConnection
 from tinkerforge.bricklet_ptc_v2 import BrickletPTCV2
