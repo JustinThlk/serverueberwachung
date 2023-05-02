@@ -19,6 +19,7 @@ def bootup():
                 print("Verbindung konnte nicht aufgebaut werden\n")
             if ipcon.get_connection_state() == 1:
                 config_finished = True
+                ipcon.disconnect()
 
         elif offline_mode == ("n" or "nein" or "no"):
             print("offline")
@@ -35,19 +36,20 @@ def bootup():
 
 
 # beginning of the main loop
-ipcon = IPConnection() # Create IP connection
+ipcon = IPConnection()  # Create IP connection
 print(resc.logo)
 
 #initializes first bootup
 bootup()
 
 #creats commandhandler
-commandHandler = CommandHandler(ipcon)
+commandHandler = CommandHandler()
 
 # the main-loop of the programm
 while running:
     command = input("=> ")
-    if command.lower() == "exit":
+    if command.lower() == ("exit" or "disconnect"):
         running = False
+        ipcon.disconnect()
     else:
         commandHandler.evaluate(command.lower())
