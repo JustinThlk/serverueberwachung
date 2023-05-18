@@ -1,3 +1,4 @@
+import Bricklets
 import resources as resc
 from CommandHandler import CommandHandler
 from tinkerforge.ip_connection import IPConnection
@@ -44,6 +45,8 @@ bootup()
 
 #creats commandhandler
 commandHandler = CommandHandler()
+
+#Register Callback for RGB-Button:
 
 # the main-loop of the programm
 while running:

@@ -23,5 +23,9 @@ class Bricklets:
         self.LightSensor = BrickletAmbientLightV3(resc.uid_list["ambientlight"], ipcon)
         self.HumiditySensor = BrickletHumidityV2(resc.uid_list["humidity"], ipcon)
         self.RGBButton = BrickletRGBLEDButton(resc.uid_list["rgbledbutton"], ipcon)
+        self.DualButton = BrickletDualButtonV2(resc.uid_list["dualbutton"], ipcon)
+        self.Speaker = PiezoSpeakerV2(resc.uid_list["piezo"], ipcon)
+        self.SegmentDisplay = SegmentDisplay4x7V2(resc.uid_list["sevensegment"], ipcon)
+        self.EPaperDisplay = EPaper296x128(resc.uid_list["epaper"], ipcon)
         ipcon.connect(resc.HOST, resc.PORT)
         # Don't use device before ipcon is connected

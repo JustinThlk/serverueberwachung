@@ -39,3 +39,15 @@ logo = "  _______       __             ______                       __\n\
   / / / / __ \/ //_/ _ \/ ___/ /   / __ \/ __ \/ ___/ __ \/ / _ \ \n\
  / / / / / / / ,< /  __/ /  / /___/ /_/ / / / (__  ) /_/ / /  __/\n\
 /_/ /_/_/ /_/_/|_|\___/_/   \____/\____/_/ /_/____/\____/_/\___/"
+
+helplist= \
+    "TinkerConsole Commands:\n" \
+    "#################################\n" \
+    "Einzelne Sensordaten:\n" \
+    "get_temp       Zeigt die aktuelle Temperatur im Serverraum an\n" \
+    "get_humidity   Zeigt die aktuelle Luftfeuchtigkeit im Serverraum an\n" \
+    "detect_motion  Gibt Auskunft, ob sich etwas unmittelbar vor dem Server bewegt!\n" \
+    "get_light      Zeigt die aktuelle Helligkeit im Serverraum an\n" \
+    "#################################\n" \
+    "Übersicht aller Sensordaten:\n" \
+    "status         Zeigt eine Übersicht aller aktuellen Daten der Sensoren\n"
